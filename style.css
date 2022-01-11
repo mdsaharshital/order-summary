@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 98%);
+}
+h3 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 24px;
+}
+p {
+  color: grey;
+  font-size: 16px;
+}
+.card {
+  background-color: white;
+  width: 300px;
+  height: 85vh;
+  border-radius: 20px;
+  box-shadow: 10px 10px 90px grey;
+  margin: 20px auto;
+}
+.card-desc-container {
+  padding: 0 25px;
+}
+.card-pic img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.card-desc {
+  margin-top: 30px;
+}
+.card-desc p {
+  text-align: center;
+  margin-top: 17px;
+}
+.card-plan {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.link-img a {
+  position: relative;
+  top: 10px;
+}
+.card-plan a {
+  color: hsl(223, 47%, 23%);
+  transition: 0.3s all;
+  font-weight: 700;
+}
+.card-plan a:hover {
+  color: blue;
+  text-decoration: none;
+}
+.btn {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+button {
+  padding: 13px 30px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  border: 0;
+  transition: 0.3s all;
+}
+
+.submit {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+}
+.submit:hover {
+  background-color: hsla(245, 75%, 52%, 0.7);
+}
+.reset {
+  color: grey;
+}
+.reset:hover {
+  color: black;
+}
+@media (min-width: 375px) {
+  .card {
+    height: 95vh;
+  }
+  .card-desc {
+    margin-top: 40px;
+  }
+  .card-desc p {
+    margin-top: 35px;
+  }
+  .card-plan {
+    margin-top: 35px;
+  }
+  .btn {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 700px) {
+  .card {
+    height: 90vh;
+  }
+  .card-desc {
+    margin-top: 40px;
+  }
+  .card-desc p {
+    margin-top: 35px;
+  }
+  .card-plan {
+    margin-top: 35px;
+  }
+  .btn {
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 480px) {
+  body {
+    background: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 98%);
+  }
+}
